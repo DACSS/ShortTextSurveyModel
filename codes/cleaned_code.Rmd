@@ -1,0 +1,9 @@
+---
+title: "Cleaned Code"
+output: html_notebook
+---
+Reading input
+```{r}
+
+```
+
