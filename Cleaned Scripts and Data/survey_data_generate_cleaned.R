@@ -1,12 +1,12 @@
 #Working directory and library#
 # setwd("~/Dropbox/Democracy Meaning/Survey Re-Analysis/")
-setwd("~/Desktop/R Project")
+# setwd("~/Desktop/R Project")
 
 #setwd("C:/Users/Tim/Dropbox/Democracy Meaning/Survey Re-Analysis/")
-library(tm)
+#library(tm)
 
 #Read in the original data and extract open responses to allow matching#
-study1<-read.csv("Conceptions_of_Democracy.csv",skip=1,stringsAsFactors = FALSE)
+study1<-read.csv("Cleaned Scripts and Data/Conceptions_of_Democracy.csv",skip=1,stringsAsFactors = FALSE)
 names(study1)[11:31]<-c("intro",paste("word",1:20,sep="")) #Renaming columns for analysis#
 names(study1)[32:48]<-c("NotFreeMark","NotHealth","NotPrivProp","NotPeaceful",
                         "NotFreeOpenElect","NotUnivAdultSuff","NotRepGov","NotEquality",
@@ -41,7 +41,7 @@ study1$party.lean<-NA
 #         probs=c(.1,.5,.8,.9,.95))
 
 #Read in supplementary data with partisanship responses, repeat renaming#
-study2<-read.csv("Conceptions_of_Democracy__with_PartyID.csv",skip=1,stringsAsFactors = FALSE)
+study2<-read.csv("Cleaned Scripts and Data/Conceptions_of_Democracy__with_PartyID.csv",skip=1,stringsAsFactors = FALSE)
 names(study2)[11:31]<-c("intro",paste("word",1:20,sep=""))
 names(study2)[32:48]<-c("NotFreeMark","NotHealth","NotPrivProp","NotPeaceful",
                         "NotFreeOpenElect","NotUnivAdultSuff","NotRepGov",
@@ -99,7 +99,7 @@ free<-defdem[,c(1,6:25)] #Subset free responses for coding and cleaning (see: cl
 #########################################################
 
 #Repetition of some basic cleaning functions (to be sure)#
-freeClean<-read.csv("Spell Checked and Substituted Free Response Vectors2.csv")
+freeClean<-read.csv("Cleaned Scripts and Data/Spell Checked and Substituted Free Response Vectors2.csv")
 freeClean$subbed<-gsub("vot*\\b","voting",freeClean$subbed)
 freeClean$subbed<-gsub("equal*\\b","equality",freeClean$subbed)
 freeClean$subbed<-gsub("right[s]?\\>","rights",freeClean$subbed) #Note, this gets rid of 'righteous'

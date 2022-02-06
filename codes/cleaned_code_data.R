@@ -104,7 +104,7 @@ free<-free_merged_df[,c(1,6:25)] #Subset free responses for coding and cleaning 
 #########################################################
 
 #Repetition of some basic cleaning functions (to be sure)#
-freeClean<-read.csv("Spell Checked and Substituted Free Response Vectors2.csv")
+freeClean<-read.csv("Cleaned Scripts and Data/Spell Checked and Substituted Free Response Vectors2.csv")
 freeClean$subbed<-gsub("vot*\\b","voting",freeClean$subbed)
 freeClean$subbed<-gsub("equal*\\b","equality",freeClean$subbed)
 freeClean$subbed<-gsub("right[s]?\\>","rights",freeClean$subbed) #Note, this gets rid of 'righteous'
@@ -308,4 +308,4 @@ dim(cat.dtm) #432 respondents, 33 categories
 dim(cat.ttm) #33 categories to 33 categories
 
 save(sub.dtm1, sub.ttm, sub.ttm1, temp2, mycorpus, cats, defdem, cat.ttm, cat.dtm, cat.df,
-     file="~/Desktop/R Project/projectdata.RData")
+     file="/home/bakharia/Documents/My Projects/ShortTextSurveyModel/ShortTextSurveyModel.Rproj")
