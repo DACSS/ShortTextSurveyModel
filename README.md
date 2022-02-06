@@ -5,7 +5,7 @@
 Below find the update Status of .R files
   *  category_type_coding_generate (working, tm library not working working with an alt.)
   *  clean_free_response (working, tm library not working working with an alt.)
-  *  createTextCats (working, tm library not working working with an alt.)
+  *  createTextCats (completed)
   *  createTextCats(1) (working, tm library not working working with an alt.)
   *  Democracy Survey Generation (working, tm library not working working with an alt.)
   *  free_response_termNet_cleaned  (working, tm library not working working with an alt.)
