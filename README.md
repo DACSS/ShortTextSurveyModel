@@ -1,10 +1,10 @@
 ## ShortTextSurveyModel
  Creating Short Text Survey Model on R
 
-##Updates
+### Updates
 * Below find the update Status of .R files
-  *  category_type_coding_generate (working)
-  *  clean_free_response (working)
+  *  category_type_coding_generate (working, tm library not working working with an alt.)
+  *  clean_free_response (working, tm library not working working with an alt.)
   *  createTextCats 
   *  createTextCats(1)
   *  Democracy Survey Generation
