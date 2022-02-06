@@ -2,7 +2,7 @@
  Creating Short Text Survey Model on R
 
 ### Updates
-* Below find the update Status of .R files
+Below find the update Status of .R files
   *  category_type_coding_generate (working, tm library not working working with an alt.)
   *  clean_free_response (working, tm library not working working with an alt.)
   *  createTextCats (working, tm library not working working with an alt.)
